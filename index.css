@@ -17,38 +17,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  padding: 1rem 2rem;
+  background-color: #000;
+  padding: 15px;
+  width: 100%;
 }
-
 .navbar-logo img {
-  width: 180px;
-  height: 90px;
-  max-width: auto;
-  object-fit: cover;
+  height: 60px;
 }
-
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: auto;
 }
-
-.navbar-menu li {
-  display: inline;
-}
-
-.navbar-menu a {
+.navbar-menu li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.navbar-menu a:hover {
-  background-color: var(--red);
-  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .content {
@@ -59,6 +45,7 @@ header {
   justify-content: center;
   gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -81,18 +68,18 @@ header {
   line-height: 1.6;
 }
 
-.section-title{ 
-    display: inline-block;
-    text-align: center;
-    margin-inline: auto;
-    margin-bottom: 20px;
-    margin-top: 100px;
+.section-title {
+  display: inline-block;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 :root {
@@ -105,3 +92,4 @@ header {
   --light-purple: #893abf;
   --purple: #6d3286;
 }
+
