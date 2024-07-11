@@ -1,3 +1,8 @@
+@font-face {
+  font-family: titleFonts;
+  src: url(assets/Creepster-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +14,17 @@ body {
   background-color: #f4f4f4;
 }
 
-header {
-  background-color: #000;
-}
-
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  padding: 15px;
-  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000; 
 }
 .navbar-logo img {
   height: 60px;
@@ -34,6 +39,7 @@ header {
 .navbar-menu li a {
   color: white;
   text-decoration: none;
+  font-family: titleFonts;
   padding: 5px 10px;
 }
 
@@ -56,6 +62,7 @@ header {
   width: 80%;
   max-width: 600px;
   text-align: center;
+  height: 280px;
 }
 
 .card h1 {
@@ -64,7 +71,7 @@ header {
 }
 
 .card p {
-  font-size: 1.2rem;
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -72,14 +79,36 @@ header {
   display: inline-block;
   text-align: center;
   margin-inline: auto;
-  margin-bottom: 20px;
-  margin-top: 100px;
+  margin-bottom: 10px;
+  /* margin-top: 100px; */
+  font-size: 40px;
+  font-family: titleFonts;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: var(--white);
+}
+
+.image-announce-xl {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  object-position: center;
+}
+
+
+.image-announce {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+}
+
+.mission-vision-title {
+  font-family: titleFonts;
 }
 
 :root {
@@ -91,5 +120,18 @@ header {
   --yellow: #ff8000;
   --light-purple: #893abf;
   --purple: #6d3286;
+  --white: #fff;
 }
 
+@media only screen and (max-width: 630px) {
+  .card p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .card { 
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+}
